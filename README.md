@@ -58,22 +58,22 @@ Bảng phân công dưới đây do nhóm cung cấp. Dự án hiện tại vi�
 | [Izim-24](https://github.com/Izim-24) | Màn hình đăng nhập, kiểm tra tài khoản và mật khẩu, phân quyền Admin/Customer, lưu phiên bằng SharedPreferences, đăng xuất và điều hướng theo vai trò. | Luồng đăng nhập, đăng xuất và phân quyền. |
 | [khanhhsd](https://github.com/khanhhsd) | Danh sách trái cây cho Admin; thêm, sửa, xóa, tìm kiếm; quản lý thông tin trái cây, cảnh báo hết hạn, kiểm tra đầu vào và xác nhận xóa. | CRUD và tìm kiếm trái cây. |
 | [yuhna111](https://github.com/yuhna111) | Danh sách trái cây có thể mua, tìm kiếm và xem chi tiết; chọn số lượng, đặt hàng, xem lịch sử; chặn trái cây hết hạn hoặc không đủ tồn kho. | Luồng xem sản phẩm, đặt hàng và xem lịch sử. |
-| [hastur-78](https://github.com/hastur-78) | Danh sách và chi tiết đơn hàng cho Admin, cập nhật `Pending`/`Confirmed`/`Completed`; kiểm thử đăng nhập, đặt hàng, hạn sử dụng và tồn kho; test case. | Quản lý trạng thái đơn hàng và bộ kiểm thử. |
+| [hastur-78](https://github.com/hastur-78) | Danh sách và chi tiết đơn hàng cho Admin, cập nhật `Pending`/`Confirmed`/`Completed`; kiểm thử đăng nhập, đặt hàng, hạn sử dụng và tồn kho; test case, ảnh kết quả và báo cáo. | Quản lý trạng thái đơn hàng và bộ kiểm thử. |
 
 ## Demo test checklist
 
-- [ ] Admin login opens Admin dashboard; customer login opens Customer dashboard.
-- [ ] Wrong credentials show an error. Relaunch restores the session. Logout clears it.
-- [ ] Admin adds, edits, deletes, searches, and opens fruits. Delete asks for confirmation.
-- [ ] Invalid name, price, quantity, or expiry date is rejected.
-- [ ] Expired fruits have an Expired label; fruit expiring today stays purchasable.
-- [ ] Customer can search and open fruits; expired and out-of-stock fruit cannot be ordered.
-- [ ] Ordering more than stock fails; a valid order shows confirmation and reduces stock.
-- [ ] Failed checkout leaves order count and stock unchanged.
-- [ ] Customer history lists only that customer’s orders; admin sees all orders.
-- [ ] Admin changes statuses among Pending, Confirmed, and Completed.
-- [ ] Reopening an order displays its saved total and current status.
-- [ ] Attempting an invalid foreign key insert is rejected by SQLite.
+- [ v] Admin login opens Admin dashboard; customer login opens Customer dashboard.
+- [v ] Wrong credentials show an error. Relaunch restores the session. Logout clears it.
+- [ v] Admin adds, edits, deletes, searches, and opens fruits. Delete asks for confirmation.
+- [ v] Invalid name, price, quantity, or expiry date is rejected.
+- [ v] Expired fruits have an Expired label; fruit expiring today stays purchasable.
+- [ v] Customer can search and open fruits; expired and out-of-stock fruit cannot be ordered.
+- [ v] Ordering more than stock fails; a valid order shows confirmation and reduces stock.
+- [ v] Failed checkout leaves order count and stock unchanged.
+- [ v] Customer history lists only that customer’s orders; admin sees all orders.
+- [ v] Admin changes statuses among Pending, Confirmed, and Completed.
+- [ v] Reopening an order displays its saved total and current status.
+- [ v] Attempting an invalid foreign key insert is rejected by SQLite.
 
 Screenshots to capture for submission: login, each dashboard, fruit list with expiry labels, add/edit form, fruit detail, checkout confirmation, customer history, order detail, and admin order management.
 
