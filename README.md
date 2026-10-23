@@ -58,7 +58,7 @@ Bảng phân công dưới đây do nhóm cung cấp. Dự án hiện tại vi�
 | [Izim-24](https://github.com/Izim-24) | Màn hình đăng nhập, kiểm tra tài khoản và mật khẩu, phân quyền Admin/Customer, lưu phiên bằng SharedPreferences, đăng xuất và điều hướng theo vai trò. | Luồng đăng nhập, đăng xuất và phân quyền. |
 | [khanhhsd](https://github.com/khanhhsd) | Danh sách trái cây cho Admin; thêm, sửa, xóa, tìm kiếm; quản lý thông tin trái cây, cảnh báo hết hạn, kiểm tra đầu vào và xác nhận xóa. | CRUD và tìm kiếm trái cây. |
 | [yuhna111](https://github.com/yuhna111) | Danh sách trái cây có thể mua, tìm kiếm và xem chi tiết; chọn số lượng, đặt hàng, xem lịch sử; chặn trái cây hết hạn hoặc không đủ tồn kho. | Luồng xem sản phẩm, đặt hàng và xem lịch sử. |
-| [hastur-78](https://github.com/hastur-78) | Danh sách và chi tiết đơn hàng cho Admin, cập nhật `Pending`/`Confirmed`/`Completed`; kiểm thử đăng nhập, đặt hàng, hạn sử dụng và tồn kho; test case, ảnh kết quả và báo cáo. | Quản lý trạng thái đơn hàng và bộ kiểm thử. |
+| [hastur-78](https://github.com/hastur-78) | Danh sách và chi tiết đơn hàng cho Admin, cập nhật `Pending`/`Confirmed`/`Completed`; kiểm thử đăng nhập, đặt hàng, hạn sử dụng và tồn kho; test case. | Quản lý trạng thái đơn hàng và bộ kiểm thử. |
 
 ## Demo test checklist
 
