@@ -48,6 +48,18 @@ Each checkout purchases one fruit and a positive quantity. A confirmation dialog
 - `app/src/main/java/com/example/fruitshop/utils/`: password hashing, session, date and fruit validation
 - `app/src/main/res/layout/`: XML screens and list rows
 
+## Phân công thành viên
+
+Bảng phân công dưới đây do nhóm cung cấp. Dự án hiện tại viết bằng Kotlin: lớp cơ sở dữ liệu là `DatabaseHelper.kt` (kế thừa `SQLiteOpenHelper`) và bảng đơn hàng trong SQLite có tên `Orders`.
+
+| Thành viên | Phần phụ trách | Sản phẩm bàn giao |
+| --- | --- | --- |
+| [vutienmanh123plhd-wq](https://github.com/vutienmanh123plhd-wq) | Thiết kế 4 bảng `Account`, `Fruit`, `Customer`, `Orders`; khóa chính, khóa ngoại, dữ liệu mẫu và hàm truy vấn trong `DatabaseHelper.kt`; thiết lập repository, thống nhất package và tích hợp code. | Cơ sở dữ liệu, API truy vấn dùng chung và dự án tích hợp. |
+| [Izim-24](https://github.com/Izim-24) | Màn hình đăng nhập, kiểm tra tài khoản và mật khẩu, phân quyền Admin/Customer, lưu phiên bằng SharedPreferences, đăng xuất và điều hướng theo vai trò. | Luồng đăng nhập, đăng xuất và phân quyền. |
+| [khanhhsd](https://github.com/khanhhsd) | Danh sách trái cây cho Admin; thêm, sửa, xóa, tìm kiếm; quản lý thông tin trái cây, cảnh báo hết hạn, kiểm tra đầu vào và xác nhận xóa. | CRUD và tìm kiếm trái cây. |
+| [yuhna111](https://github.com/yuhna111) | Danh sách trái cây có thể mua, tìm kiếm và xem chi tiết; chọn số lượng, đặt hàng, xem lịch sử; chặn trái cây hết hạn hoặc không đủ tồn kho. | Luồng xem sản phẩm, đặt hàng và xem lịch sử. |
+| [hastur-78](https://github.com/hastur-78) | Danh sách và chi tiết đơn hàng cho Admin, cập nhật `Pending`/`Confirmed`/`Completed`; kiểm thử đăng nhập, đặt hàng, hạn sử dụng và tồn kho; test case, ảnh kết quả và báo cáo. | Quản lý trạng thái đơn hàng và bộ kiểm thử. |
+
 ## Demo test checklist
 
 - [ ] Admin login opens Admin dashboard; customer login opens Customer dashboard.
@@ -67,15 +79,4 @@ Screenshots to capture for submission: login, each dashboard, fruit list with ex
 
 ## GitHub
 
-Create an empty repository on GitHub, then in this directory run:
-
-```bash
-git init
-git add .
-git commit -m "Build four-table Fruit Shop Management Android app"
-git branch -M main
-git remote add origin https://github.com/YOUR_NAME/fruit-shop-management.git
-git push -u origin main
-```
-
-For collaboration, each contributor creates a branch (`git switch -c feature/name`), commits focused changes, pushes that branch, and opens a pull request into `main`. Suggested milestones: project setup; database and models; login and sessions; admin fruit management; customer browsing and checkout; order history and status management; test and polish. Never commit `local.properties`, build files, or credentials beyond the clearly marked demo seed accounts.
+Repository: [MobileAPP_Test2](https://github.com/vutienmanh123plhd-wq/MobileAPP_Test2). Mỗi thành viên tạo nhánh cho phần mình phụ trách, commit thay đổi thực tế bằng tài khoản và email GitHub của mình, rồi mở pull request vào `main`. Bảng phân công ở trên ghi trách nhiệm của nhóm; danh sách Contributors trên GitHub được tính từ tác giả commit thực tế. Không commit `local.properties`, tệp build hoặc thông tin đăng nhập ngoài tài khoản demo đã ghi rõ.
